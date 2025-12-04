@@ -81,9 +81,9 @@ const Programs = () => {
                 <p className="text-muted-foreground mb-6 line-clamp-3">
                   {program.description}
                 </p>
-                <button  className="text-blue-500">
+                <button  className="text-blue-500 flex justify-between items-center px-3 py-2">
                   Learn More
-                  <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover/btn:translate-x-1" />
+                  <ArrowRight className="ml-2 w-4 h-4 " />
                 </button>
               </div>
             </article>

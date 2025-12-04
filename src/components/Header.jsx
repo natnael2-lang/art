@@ -17,7 +17,7 @@ const Header = () => {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <a href="#home" className="flex items-center gap-3">
+          <a href="#home" className="flex items-center gap-3 h">
             <div className="w-12 h-12 rounded-full bg-blue-600 flex items-center justify-center">
               <span className="text-white font-bold text-xl">A</span>
             </div>
@@ -35,7 +35,7 @@ const Header = () => {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-gray-600 hover:text-gray-900 transition duration-300 font-medium"
+                className="text-gray-600 transition duration-300 font-medium hover:text-blue-500"
               >
                 {link.label}
               </a>

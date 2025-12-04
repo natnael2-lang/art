@@ -38,8 +38,8 @@ const Footer = () => {
           {/* Brand */}
           <div className="lg:col-span-2 text-center lg:text-left">
             <div className="flex items-center justify-center lg:justify-start gap-3 mb-6">
-              <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center">
-                <span className="text-primary-foreground font-display font-bold text-xl">A</span>
+              <div className="w-12 h-12 rounded-full bg-blue-500 flex items-center justify-center">
+                <span className="text-gray-900 font-display font-bold text-xl ">A</span>
               </div>
               <div>
                 <p className="font-display font-semibold text-lg leading-tight">Alle School</p>
@@ -59,7 +59,7 @@ const Footer = () => {
                   aria-label={social.label}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 rounded-full bg-secondary-foreground/10 flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
+                  className="w-10 h-10 rounded-full bg-gray-900/10 flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
                 >
                   <social.icon className="w-5 h-5" />
                 </a>
