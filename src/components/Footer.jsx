@@ -31,19 +31,19 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-secondary text-secondary-foreground">
+    <footer className="bg-[#0b021b]/80 text-gray-500">
       <div className="container mx-auto px-4 lg:px-8 py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-12">
 
           {/* Brand */}
           <div className="lg:col-span-2 text-center lg:text-left">
             <div className="flex items-center justify-center lg:justify-start gap-3 mb-6">
-              <div className="w-12 h-12 rounded-full bg-blue-500 flex items-center justify-center">
-                <span className="text-gray-900 font-display font-bold text-xl ">A</span>
+              <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center">
+                <span className="text-white font-display font-bold text-xl ">A</span>
               </div>
               <div>
-                <p className="font-display font-semibold text-lg leading-tight">Alle School</p>
-                <p className="text-xs text-secondary-foreground/70">Fine Arts & Design</p>
+                <p className="font-display font-semibold text-lg leading-tight text-white">Alle School</p>
+                <p className="text-xs text-gray-500">Fine Arts & Design</p>
               </div>
             </div>
 
@@ -69,13 +69,13 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h3 className="font-display font-semibold text-lg mb-4">Quick Links</h3>
+            <h3 className="font-display font-semibold text-lg mb-4 text-white" >Quick Links</h3>
             <ul className="space-y-3">
               {quickLinks.map((link, index) => (
                 <li key={index}>
                   <a
                     href={link.href}
-                    className="text-secondary-foreground/70 hover:text-secondary-foreground hover:underline transition-colors"
+                    className="text-secondary- hover:text-secondary-foreground hover:underline transition-colors"
                   >
                     {link.label}
                   </a>
@@ -86,7 +86,7 @@ const Footer = () => {
 
           {/* Programs */}
           <div>
-            <h3 className="font-display font-semibold text-lg mb-4">Programs</h3>
+            <h3 className="font-display font-semibold text-lg mb-4 text-white">Programs</h3>
             <ul className="space-y-3">
               {programs.map((link, index) => (
                 <li key={index}>
@@ -103,7 +103,7 @@ const Footer = () => {
 
           {/* Resources */}
           <div>
-            <h3 className="font-display font-semibold text-lg mb-4">Resources</h3>
+            <h3 className="font-display font-semibold text-lg mb-4 text-white" >Resources</h3>
             <ul className="space-y-3">
               {resources.map((link, index) => (
                 <li key={index}>

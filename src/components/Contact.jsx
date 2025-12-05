@@ -48,10 +48,10 @@ const Contact = () => {
         
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-blue-600 font-semibold text-sm uppercase tracking-wider">
+          <span className="text-primary font-semibold text-sm uppercase tracking-wider">
             Get In Touch
           </span>
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mt-4 mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-secondary mt-4 mb-6">
             Contact Us
           </h2>
           <p className="text-gray-600 text-lg">
@@ -69,8 +69,8 @@ const Contact = () => {
                 className="flex gap-4 animate-fade-in-left"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="w-12 h-12 rounded-lg bg-blue-600/10 flex items-center justify-center">
-                  <item.icon className="w-5 h-5 text-blue-600" />
+                <div className="w-12 h-12 rounded-lg bg-primary-light flex items-center justify-center">
+                  <item.icon className="w-5 h-5 text-primary" />
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-900 mb-1">
@@ -88,7 +88,7 @@ const Contact = () => {
 
           {/* Contact Form */}
           <div className="lg:col-span-3">
-            <form className="bg-gray-50 rounded-2xl p-8 shadow-md animate-fade-in-right" onSubmit={handleSubmit}>
+            <form className="bg-orange-50 rounded-2xl p-8 shadow-md animate-fade-in-right" onSubmit={handleSubmit}>
               
               <div className="grid md:grid-cols-2 gap-6 mb-6">
                 {/* Name */}
@@ -179,7 +179,7 @@ const Contact = () => {
               {/* Tailwind Button */}
               <button
                 type="submit"
-                className="w-full flex items-center justify-center gap-2 bg-blue-600 text-white py-4 rounded-full text-lg font-medium hover:bg-blue-700 transition"
+                className="w-full flex items-center justify-center gap-2 bg-primary text-white py-4 rounded-full text-lg font-medium hover:bg-orange-700 transition"
               >
                 Send Message
                 <Send className="w-5 h-5" />
