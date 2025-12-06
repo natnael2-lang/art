@@ -6,7 +6,8 @@
   --accent:rgb(243, 158, 0);
   --primary-soft:orange;
   --secondary-soft:rgb(151, 146, 146);
-  --accent-soft:orange;
+  --accent-soft:#0b021b;
+   --hand-fill: #222;
 
 }
 
@@ -51,4 +52,30 @@
 .border-primary{
   @apply border border-orange-600
 }
+.signature {
+  font-family: "Patrick Hand", Inter, sans-serif;
+  font-size: 1.05rem;
+  letter-spacing: 0.4px;
+  color: var(--hand-fill);
+}
+.text-hand-shadow {
+  text-shadow: 0 1px 0 rgba(255,255,255,0.6), 0 3px 6px rgba(0,0,0,0.06);
+}
+@keyframes fadeIn {
+          0%{ opacity: 0 }
+          100%{ opacity: 1 }
+        }
+@keyframes fadeOut{
 
+          0%{ opacity: 1 }
+          100%{ opacity: 0 }
+      
+}
+
+.animation-fadeIn{
+  animation:fadeIn 0.5s ease-in forwards
+}
+.animation-fadeOut{
+  animation:fadeOut 0.3s ease-in forwards
+}
+        

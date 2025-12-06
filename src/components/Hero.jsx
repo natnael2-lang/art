@@ -59,9 +59,7 @@ const Hero = () => {
           />
         ))}
 
-        <div className="absolute inset-0  bg-gradient-to-r from-white/95 via-white/60 to-white/0 z-10" />
-      
-        
+        <div className="absolute inset-0 bg-gradient-to-r from-white/95 via-white/70 to-white/0 z-10" />
       </div>
 
       <div className="container mx-auto px-4 lg:px-8 relative z-10 ">
@@ -74,34 +72,44 @@ const Hero = () => {
             </span>
           </div>
 
-          {/* Heading */}
-          <h1 className="font-bold text-5xl md:text-6xl lg:text-7xl text-gray-900 mb-6 animate-fade-in" style={{ animationDelay: "0.1s" }}>
-            Alle School of{" "}
-            <span className="bg-gradient-to-r from-orange-600 to-yellow-600 text-transparent bg-clip-text">
-              Fine Arts
-            </span>{" "}
-            & Design
+          {/* Handwritten Heading */}
+          <h1
+            className="font-hand text-5xl md:text-6xl lg:text-7xl mb-6 text-gray-900 leading-tight text-hand-shadow"
+            style={{ lineHeight: 1.03 }}
+          >
+            <span className="block">
+              Alle School of{" "}
+              <span className="bg-gradient-to-r from-orange-700 to-yellow-500 text-transparent bg-clip-text">
+                Fine Arts
+              </span>
+            </span>
+            <span className="block"> &amp; Design</span>
           </h1>
 
-          {/* Subheading */}
-          <p className="text-xl text-gray-900 mb-10 max-w-2xl animate-fade-in" style={{ animationDelay: "0.2s" }}>
-            Shaping the future of Ethiopian design since 1957. Discover your creative potential through Fashion, Industrial, and Graphic Design.
+          {/* Optional small script/signature under heading */}
+          <div className="mb-4">
+            <span className="signature">Shaping the future of Ethiopian design since 1957</span>
+          </div>
+
+          {/* Subheading (use regular sans for better readability) */}
+          <p className="text-xl text-gray-700 mb-10 max-w-2xl signature">
+            Discover your creative potential through Fashion, Industrial, and Graphic Design a place where craft meets contemporary practice.
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-wrap gap-4 mb-16 animate-fade-in" style={{ animationDelay: "0.3s" }}>
-            <button className="flex items-center bg-primary text-white px-6 py-3 rounded-full text-lg font-medium hover-bg-primary transition">
+          <div className="flex flex-wrap gap-4 mb-16">
+            <button className="flex items-center bg-primary text-white px-6 py-3 rounded-full text-lg font-medium hover:bg-primary/90 transition">
               Explore More
               <ArrowRight className="ml-2" />
             </button>
 
-            <button className="px-6 py-3 rounded-full text-lg font-medium  border-primary text-primary hover:bg-orange-50 transition">
+            <button className="px-6 py-3 rounded-full text-lg font-medium border border-primary text-primary hover:bg-orange-50 transition">
               Virtual Tour
             </button>
           </div>
 
           {/* Stats */}
-          <div className="flex flex-wrap gap-8 animate-fade-in" style={{ animationDelay: "0.4s" }}>
+          <div className="flex flex-wrap gap-8">
             {stats.map((stat, index) => (
               <div key={index} className="flex items-center gap-3">
                 <div className="w-12 h-12 rounded-lg bg-white shadow-md flex items-center justify-center">
@@ -109,7 +117,7 @@ const Hero = () => {
                 </div>
                 <div>
                   <p className="text-2xl font-bold text-secondary">{stat.value}</p>
-                  <p className="text-sm text-gray-500">{stat.label}</p>
+                  <p className="text-sm text-gray-500 ">{stat.label}</p>
                 </div>
               </div>
             ))}

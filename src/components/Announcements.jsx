@@ -51,12 +51,12 @@ const Announcements = () => {
             <span className="text-primary font-semibold text-sm uppercase tracking-wider">
               Latest News
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mt-4">
+            <h2 className="text-4xl md:text-5xl font-hand font-bold text-gray-900 mt-4">
               Announcements
             </h2>
           </div>
 
-          <button className="flex items-center px-6 py-3 rounded-full border-primary text-primary font-medium hover:bg-orange-50 transition">
+          <button className="flex items-center px-6 py-3 rounded-full border border-primary text-primary font-medium hover:bg-orange-50 transition">
             View All News
             <ArrowRight className="ml-2" />
           </button>
@@ -70,13 +70,10 @@ const Announcements = () => {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.2 }}
-              transition={{
-                duration: 0.6,
-                delay: index * 0.15,
-                ease: "easeOut",
-              }}
+              transition={{ duration: 0.6, delay: index * 0.15, ease: "easeOut" }}
               className="group bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
             >
+              {/* Badge & New label */}
               <div className="flex items-start justify-between gap-4 mb-4">
                 <div className="flex items-center gap-3">
                   <span className="px-3 py-1 rounded-full bg-primary-light text-primary text-xs font-semibold">
@@ -91,23 +88,24 @@ const Announcements = () => {
                 </div>
               </div>
 
-              <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-orange-600 transition-colors line-clamp-2">
+              {/* Title */}
+              <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-orange-600 transition-colors line-clamp-2 font-hand">
                 {item.title}
               </h3>
 
-              <p className="text-gray-600 mb-4 line-clamp-2">
+              {/* Excerpt */}
+              <p className="text-gray-600 mb-4 line-clamp-2 font-sans">
                 {item.excerpt}
               </p>
 
+              {/* Date & arrow */}
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-2 text-sm text-gray-500">
                   <Calendar className="w-4 h-4" />
                   {item.date}
                 </div>
-
                 <ArrowRight className="w-5 h-5 text-blue-600 opacity-0 group-hover:opacity-100 transition-opacity" />
               </div>
-
             </motion.article>
           ))}
         </div>
